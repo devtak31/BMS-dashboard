@@ -1,1 +1,1229 @@
-[]
+[
+    {
+        "id": "2d51982bd083507d",
+        "type": "tab",
+        "label": "BMS test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "08518ecc2677b228",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "c657c24fe2e40774",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "7eb23c3742f29c67",
+        "type": "ui-group",
+        "name": "medical",
+        "page": "",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0c0b3f64fe4440ee",
+        "type": "ui-page",
+        "name": "BMS test",
+        "ui": "08518ecc2677b228",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "c657c24fe2e40774",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2c97595090c52328",
+        "type": "ui-group",
+        "name": "test bms",
+        "page": "0c0b3f64fe4440ee",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1bc26afbe78f0552",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "316957624a3cb055",
+        "type": "tls-config",
+        "name": "BMS-TLS",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "10b0c8d6245dd9ec8fe494518bdc2860465276228294c4dbd2bf441cd07a8146-certificate.pem.crt",
+        "keyname": "10b0c8d6245dd9ec8fe494518bdc2860465276228294c4dbd2bf441cd07a8146-private.pem.key",
+        "caname": "AmazonRootCA1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "bd091762cd54905a",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9d4992454df3958e",
+        "type": "mqtt-broker",
+        "name": "BMS",
+        "broker": "d05259191pe1uuppiud0f-ats.iot.ap-south-1.amazonaws.com",
+        "port": "8883",
+        "tls": "316957624a3cb055",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "21b87c1016349b7c",
+        "type": "ui-button",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "voltage",
+        "label": "voltage",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"Voltagesensorvalue\":100,\"voltagesensor\":\"Sens1\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "ec1cf87789d7f623"
+            ]
+        ]
+    },
+    {
+        "id": "f0dbd45bec831f51",
+        "type": "ui-button",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "current",
+        "label": "current",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"Currentsensorvalue\":101,\"Currentsensor\":\"Sens2\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "97da4f90eabd74e7"
+            ]
+        ]
+    },
+    {
+        "id": "1319ea29a7a9bf74",
+        "type": "ui-button",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "temperature",
+        "label": "temperature",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"Temperaturesensorvalue\":102,\"Temperaturesensor\":\"Sens3\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "de25b9eec32b4843"
+            ]
+        ]
+    },
+    {
+        "id": "dfbb45abd4fb9562",
+        "type": "ui-button",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "fire",
+        "label": "fire",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"Firesensorvalue\":103,\"Firesensor\":\"Sens4\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "a1eb3bf42c53bfe9"
+            ]
+        ]
+    },
+    {
+        "id": "d0b4d9052ebce705",
+        "type": "ui-button",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "flex sensor",
+        "label": "flex",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{\"Flexsensorvalue\":104,\"Flexsensor\":\"Sens5\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "2612ce7897ef95c3"
+            ]
+        ]
+    },
+    {
+        "id": "ec1cf87789d7f623",
+        "type": "function",
+        "z": "2d51982bd083507d",
+        "name": "voltage",
+        "func": "let mymsg = msg.payload;\nmymsg.Voltagesensorvalue = parseInt(Math.random() * 50);\nmsg.payload = mymsg;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "987c758510d267cc"
+            ]
+        ]
+    },
+    {
+        "id": "97da4f90eabd74e7",
+        "type": "function",
+        "z": "2d51982bd083507d",
+        "name": "current",
+        "func": "let mymsg = msg.payload;\nmymsg.Currentsensorvalue = parseInt(Math.random() * 50);\nmsg.payload = mymsg;\nreturn msg;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "987c758510d267cc"
+            ]
+        ]
+    },
+    {
+        "id": "de25b9eec32b4843",
+        "type": "function",
+        "z": "2d51982bd083507d",
+        "name": "temperature",
+        "func": "let mymsg = msg.payload;\nmymsg.Temperaturesensorvalue = parseInt(Math.random() * 50);\nmsg.payload = mymsg;\nreturn msg;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "987c758510d267cc"
+            ]
+        ]
+    },
+    {
+        "id": "a1eb3bf42c53bfe9",
+        "type": "function",
+        "z": "2d51982bd083507d",
+        "name": "fire",
+        "func": "let mymsg = msg.payload;\nmymsg.Voltagesensorvalue = parseInt(Math.random() * 50);\nmsg.payload = mymsg;\nreturn msg;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "987c758510d267cc"
+            ]
+        ]
+    },
+    {
+        "id": "2612ce7897ef95c3",
+        "type": "function",
+        "z": "2d51982bd083507d",
+        "name": "flex",
+        "func": "let mymsg = msg.payload;\nmymsg.Voltagesensorvalue = parseInt(Math.random() * 50);\nmsg.payload = mymsg;\nreturn msg;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "987c758510d267cc"
+            ]
+        ]
+    },
+    {
+        "id": "987c758510d267cc",
+        "type": "mqtt out",
+        "z": "2d51982bd083507d",
+        "name": "",
+        "topic": "bms_domain",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9d4992454df3958e",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "42fee08d45c4d698",
+        "type": "mqtt in",
+        "z": "2d51982bd083507d",
+        "name": "",
+        "topic": "bms_domain",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "9d4992454df3958e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "0bacbddf605f857f",
+                "cfd9684278996976",
+                "ca41bda77714e1bc",
+                "032d33c0abb0b4e6",
+                "d602598749492ffd",
+                "7309f7ef3f2e9ea2"
+            ]
+        ]
+    },
+    {
+        "id": "0bacbddf605f857f",
+        "type": "debug",
+        "z": "2d51982bd083507d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "cfd9684278996976",
+        "type": "change",
+        "z": "2d51982bd083507d",
+        "name": "voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Voltagesensorvalue",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 60,
+        "wires": [
+            [
+                "e0eb51430117517d",
+                "bc36645cc2647184"
+            ]
+        ]
+    },
+    {
+        "id": "ca41bda77714e1bc",
+        "type": "change",
+        "z": "2d51982bd083507d",
+        "name": "current",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Currentsensorvalue",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "52b1ca4d1c8ae83a",
+                "8afe96d2ad9a74d3"
+            ]
+        ]
+    },
+    {
+        "id": "032d33c0abb0b4e6",
+        "type": "change",
+        "z": "2d51982bd083507d",
+        "name": "temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Temperaturesensorvalue",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "2ce49d3b3985f6ab",
+                "e950358a206a4001"
+            ]
+        ]
+    },
+    {
+        "id": "d602598749492ffd",
+        "type": "change",
+        "z": "2d51982bd083507d",
+        "name": "fire",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Firesensorvalue",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 360,
+        "wires": [
+            [
+                "130acd2116bac6af",
+                "8b00c82713eec771"
+            ]
+        ]
+    },
+    {
+        "id": "7309f7ef3f2e9ea2",
+        "type": "change",
+        "z": "2d51982bd083507d",
+        "name": "flex",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Flexsensorvalue",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "ab257b4c8d2403d9",
+                "8ce08af4c228d3b7"
+            ]
+        ]
+    },
+    {
+        "id": "e0eb51430117517d",
+        "type": "ui-gauge",
+        "z": "2d51982bd083507d",
+        "name": "voltage",
+        "group": "2c97595090c52328",
+        "order": 1,
+        "value": "payloads",
+        "valueType": "msg",
+        "width": "6",
+        "height": 7,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "voltage",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1080,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "52b1ca4d1c8ae83a",
+        "type": "ui-gauge",
+        "z": "2d51982bd083507d",
+        "name": "current",
+        "group": "2c97595090c52328",
+        "order": 4,
+        "value": "payloads",
+        "valueType": "msg",
+        "width": "6",
+        "height": 7,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "current",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1080,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2ce49d3b3985f6ab",
+        "type": "ui-gauge",
+        "z": "2d51982bd083507d",
+        "name": "temperature",
+        "group": "2c97595090c52328",
+        "order": 7,
+        "value": "payloads",
+        "valueType": "msg",
+        "width": "6",
+        "height": 7,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "temperature",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1090,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "130acd2116bac6af",
+        "type": "ui-gauge",
+        "z": "2d51982bd083507d",
+        "name": "fire",
+        "group": "2c97595090c52328",
+        "order": 13,
+        "value": "payloads",
+        "valueType": "msg",
+        "width": "6",
+        "height": 7,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "fire",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ab257b4c8d2403d9",
+        "type": "ui-gauge",
+        "z": "2d51982bd083507d",
+        "name": "flex sensor",
+        "group": "2c97595090c52328",
+        "order": 10,
+        "value": "payloads",
+        "valueType": "msg",
+        "width": "6",
+        "height": 7,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "flex",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1090,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bc36645cc2647184",
+        "type": "ui-chart",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "voltage",
+        "label": "voltage",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1080,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8afe96d2ad9a74d3",
+        "type": "ui-chart",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "current",
+        "label": "current",
+        "order": 5,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1080,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e950358a206a4001",
+        "type": "ui-chart",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "temperature",
+        "label": "temperature",
+        "order": 8,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1090,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b00c82713eec771",
+        "type": "ui-chart",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "fire",
+        "label": "fire",
+        "order": 14,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1070,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ce08af4c228d3b7",
+        "type": "ui-chart",
+        "z": "2d51982bd083507d",
+        "group": "2c97595090c52328",
+        "name": "flex",
+        "label": "flex",
+        "order": 11,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1070,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    }
+]
